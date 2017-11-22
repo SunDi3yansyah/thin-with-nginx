@@ -14,3 +14,14 @@ __Stop__
 ```
 thin stop -C config/thin.yml
 ```
+
+### Rails Init to Deploy
+
+__bundle__
+```
+bundle install --deployment --without development test
+```
+__secret key__
+```
+echo "export SECRET_KEY_BASE=$(rails secret RAILS_ENV=production)" >> ~/.bashrc
+```
