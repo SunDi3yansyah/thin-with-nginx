@@ -25,3 +25,7 @@ __secret key__
 ```
 echo "export SECRET_KEY_BASE=$(rails secret RAILS_ENV=production)" >> ~/.bashrc
 ```
+__precompile assets__
+```
+rails assets:precompile RAILS_ENV=production
+```
